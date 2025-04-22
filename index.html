@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5-TTS Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        /* audio {
+            width: 150px;
+        }  */
+        th {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>F5-TTS Demonstration</h1>
+    <p>- 2025-04-22</p>
+    <p>- Dataset : 399 Hour, 223 Speakers - english, korean, italian, japanese</p>
+    <br>
+    <h2>Crosslingual - Female</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ref/Gen</th>
+                <th>Korean</th>
+                <th>English</th>
+                <th>Italian</th>
+                <th>Japanese</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Kor</th>
+                <td><audio controls src="20250422_399H/normal/gen/kor/kor_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/kor/eng_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/kor/ita_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/kor/jpn_female.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Eng</th>
+                <td><audio controls src="20250422_399H/normal/gen/eng/kor_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/eng/eng_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/eng/ita_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/eng/jpn_female.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Ita</th>
+                <td><audio controls src="20250422_399H/normal/gen/ita/kor_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/ita/eng_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/ita/ita_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/ita/jpn_female.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Jpn</th>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/kor_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/eng_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/ita_female.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/jpn_female.wav"></audio></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Crosslingual - Male</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ref/Gen</th>
+                <th>Korean</th>
+                <th>English</th>
+                <th>Italian</th>
+                <th>Japanese</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Kor</th>
+                <td><audio controls src="20250422_399H/normal/gen/kor/kor_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/kor/eng_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/kor/ita_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/kor/jpn_male.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Eng</th>
+                <td><audio controls src="20250422_399H/normal/gen/eng/kor_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/eng/eng_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/eng/ita_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/eng/jpn_male.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Ita</th>
+                <td><audio controls src="20250422_399H/normal/gen/ita/kor_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/ita/eng_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/ita/ita_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/ita/jpn_male.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Jpn</th>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/kor_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/eng_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/ita_male.wav"></audio></td>
+                <td><audio controls src="20250422_399H/normal/gen/jpn/jpn_male.wav"></audio></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Emotion</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Voice/Emotion</th>
+                <th>Normal</th>
+                <th>Apologize</th>
+                <th>Enthusiastic</th>
+                <th>Whisper</th>
+                <th>News</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Harin<br>(reference)</th>
+                <td><audio controls src="20250422_399H/emotion/ref_kgr-a01-01-dlg.169.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/ref_kgr-f02-31-apologize-emt-p1.009.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/ref_kgr-g02-33-enthusiastic-emt-e1.045.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/ref_kgr-j04-40-whisper-emt-w1.195.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/ref_kgr-h03-36-news-emt-c1.041.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>Harin<br>(inference)</th>
+                <td><audio controls src="20250422_399H/emotion/gen_harin_dlg.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/gen_harin_apologize.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/gen_harin_enthusiastic.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/gen_harin_whisper.wav"></audio></td>
+                <td><audio controls src="20250422_399H/emotion/gen_harin_news.wav"></audio></td>
+            </tr>            
+        </tbody>
+    </table>
+    <br>
+    <h2>Code Switching</h2>
+    <p> 1. Text : 나는 지금 morning coffee를 아주 맛있게 drink 하는 중입니다.</p>
+    <p> 1. Transcription : kor_n kor_a kor_n kor_eu kor_nc # kor_jh kor_i kor_g kor_eu kor_mc # eng_M eng_OH1 eng_R eng_N eng_IH0 eng_NG - eng_K eng_AO1 eng_F eng_IY0 - r eu rc # kor_a kor_jx kor_u # kor_m kor_a kor_s kor_i kor_tc kor_gg kor_e # eng_D eng_R eng_IH1 eng_NG eng_K # kor_h kor_a kor_n kor_eu kor_nc # kor_jh kor_u kor_ng kor_i kor_mc kor_n kor_i kor_d kor_a .</p>
+    <p> 2. Text : Elite Runner Pro는 안정성과 반동을 제공하는 unique한 design 그리고 cushion을 가지고 있습니다.</p>
+    <p> 2. Transcription : eng_IH0 eng_L eng_IY1 eng_T - eng_R eng_AH1 eng_N eng_ER0 - eng_P eng_R eng_OW1 kor_n kor_eu kor_nc # kor_a kor_nc kor_jx kor_eo kor_ng kor_ss kor_eo kor_ng kor_g kor_wa # kor_p kor_a kor_nc kor_d kor_o kor_ng kor_eu kor_rc # kor_jh kor_e kor_g kor_o kor_ng kor_hx kor_a kor_n kor_eu kor_nc # eng_Y eng_UW0 eng_N eng_IY1 eng_K kor_hx kor_a kor_nc # eng_D eng_IH0 eng_Z eng_AY1 eng_N # kor_k kor_eu kor_r kor_i kor_g kor_o # eng_K eng_UH1 eng_SH eng_AH0 eng_N kor_eu kor_rc - kor_g kor_a kor_jx kor_i kor_g kor_o - kor_i kor_tc kor_ss kor_eu kor_mc kor_n kor_i kor_d kor_a .</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Ref. Kor w/ Eng</th>
+                <td><audio controls src="20250422_399H/code_switch/kor_korXeng1.wav"></audio></td>
+                <td><audio controls src="20250422_399H/code_switch/kor_korXeng2.wav"></audio></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Ref. Eng w/ Kor</th>
+                <td><audio controls src="20250422_399H/code_switch/eng_korXeng1.wav"></audio></td>
+                <td><audio controls src="20250422_399H/code_switch/eng_korXeng2.wav"></audio></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Noise Reduction</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Voice/Noise</th>
+                <th>Reverb</th>
+                <th>Crowd</th>
+                <th>Pink(weak)</th>
+                <th>Pink(medium)</th>
+                <th>Pink(strong)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>NMH<br>(reference)</th>
+                <td><audio controls src="20250422_399H/noise/nmh-a02-gener.073.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/nmh-a02-gener.073_crowdNoise.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/nmh-a02-gener.073_pinkNoise.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/nmh-a02-gener.073_pinkNoise2.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/nmh-a02-gener.073_pinkNoise3.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>NMH<br>(inference)</th>
+                <td><audio controls src="20250422_399H/noise/gen_nmh_reverb.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/gen_nmh_crowdNoise.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/gen_nmh_pinkNoise.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/gen_nmh_pinkNoise2.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/gen_nmh_pinkNoise3.wav"></audio></td>
+            </tr>            
+        </tbody>
+    </table>
+    <br>
+    <h3>Appendix - president</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>LMB</th>
+                <th>PGH</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><audio controls src="20250422_399H/noise/gen_lmb.wav"></audio></td>
+                <td><audio controls src="20250422_399H/noise/gen_pgh.wav"></audio></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Zero-shot(unseen speaker)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Voice/Emotion</th>
+                <th>Normal</th>
+                <th>Apologize</th>
+                <th>Enthusiastic</th>
+                <th>Whisper</th>
+                <th>News</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>KJW<br>(reference)</th>
+                <td><audio controls src="20250422_399H/zero-shot/ref/jw-normal.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/ref/jw-apologize.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/ref/jw-enthusiastic.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/ref/jw-whisper.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/ref/jw-news.wav"></audio></td>
+            </tr>
+            <tr>
+                <th>KJW<br>(inference)</th>
+                <td><audio controls src="20250422_399H/zero-shot/gen/gen_normal.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/gen/gen_apologize.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/gen/gen_enthusiastic.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/gen/gen_whisper.wav"></audio></td>
+                <td><audio controls src="20250422_399H/zero-shot/gen/gen_news.wav"></audio></td>
+            </tr>            
+        </tbody>
+    </table>
+</body>
+</html>
